@@ -16,6 +16,11 @@ app.config(['$routeProvider', '$locationProvider', function ($routeProvider, $lo
                           templateUrl: 'Home/Review',
                           controller: 'reviewController'
                       });
+	$routeProvider.when('/RestCode',
+                      {
+                          templateUrl: 'RestCode/Viewiew',
+                          controller: 'RestCodeController'
+                      });
     $routeProvider.otherwise(
                    {
                        redirectTo: '/'
