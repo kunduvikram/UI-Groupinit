@@ -26,3 +26,8 @@ app.config(['$routeProvider', '$locationProvider', function ($routeProvider, $lo
                        redirectTo: '/'
                    });
 }]);
+app.service("systmappCRUDService", function ($http) {
+        this.systmappList = function () {
+            return $http.get("Home/getsystmappList");
+        };
+    });
